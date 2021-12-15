@@ -1,0 +1,184 @@
+[
+    {
+        "userId": "yashram9798",
+        "username": {
+            "firstName": "Yash",
+            "lastName": "Kumar"
+        },
+        "emailId": "yashram9798@gmail.com",
+        "password": {
+            "loginPassword": "yashysh",
+            "confirmPassword": "yashysh"
+        },
+        "birthday": "2021-12-16",
+        "created": 1,
+        "posts": [
+            {
+                "postId": "1",
+                "postedOn": "2021-12-16",
+                "postedAt": "23:01",
+                "image": "yash.png",
+                "caption": "yash is good",
+                "liked": 1,
+                "comments": [
+                    {
+                        "userId": "yashram9798",
+                        "comment": "Nice pic",
+                        "commentedOn": "2021-12-16",
+                        "commentedAt": "23:01",
+                        "commentLike": 1,
+                        "repliesComment": [
+                            {
+                                "userId": "yashram9798",
+                                "reply": "Nice Comment 1.1",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:02",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush09",
+                                "reply": "Nice Comment 1.2",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:03",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush10",
+                                "reply": "Nice Comment 1.3",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:04",
+                                "replyToId": "aayush09"
+                            }
+                        ]
+                    },
+                    {
+                        "userId": "yoyo10",
+                        "comment": "Nice pic 2",
+                        "postedOn": "2021-12-16",
+                        "postedAt": "23:11",
+                        "commentLike": 1,
+                        "repliesComment": [
+                            {
+                                "userId": "yashram9798",
+                                "reply": "Nice Comment 2.1",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:12",
+                                "replyToId": "yoyo10"
+                            },
+                            {
+                                "userId": "aayush09",
+                                "reply": "Nice Comment 2.2",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:13",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush10",
+                                "reply": "Nice Comment 2.3",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-16",
+                                "repliedAt": "23:14",
+                                "replyToId": "yoyo10"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "postId": "2",
+                "image": "yash.png",
+                "postedOn": "2021-12-17",
+                "postedAt": "00:01",
+                "caption": "yash is good 2",
+                "liked": 1,
+                "comments": [
+                    {
+                        "userId": "yashram9798",
+                        "commentedOn": "2021-12-17",
+                        "commentedAt": "00:01",
+                        "comment": "Nice pic",
+                        "commentLike": 1,
+                        "repliesComment": [
+                            {
+                                "userId": "yashram9798",
+                                "reply": "Nice Comment 1.1",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:02",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush09",
+                                "reply": "Nice Comment 1.2",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:03",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush10",
+                                "reply": "Nice Comment 1.3",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:04",
+                                "replyToId": "aayush09"
+                            }
+                        ]
+                    },
+                    {
+                        "userId": "yoyo10",
+                        "commentedOn": "2021-12-17",
+                        "commentedAt": "00:11",
+                        "comment": "Nice pic 2",
+                        "commentLike": 1,
+                        "repliesComment": [
+                            {
+                                "userId": "yashram9798",
+                                "reply": "Nice Comment 2.1",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:12",
+                                "replyToId": "yoyo10"
+                            },
+                            {
+                                "userId": "aayush09",
+                                "reply": "Nice Comment 2.2",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:13",
+                                "replyToId": "yashram9798"
+                            },
+                            {
+                                "userId": "aayush10",
+                                "reply": "Nice Comment 2.3",
+                                "replyLike": 1,
+                                "repliedOn": "2021-12-17",
+                                "repliedAt": "00:14",
+                                "replyToId": "yoyo10"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "following": [
+            {
+                "userId": "aayush10",
+                "followsBack": 0
+            },
+            {
+                "userId": "aayush09",
+                "followsBack": 1
+            },
+            {
+                "userId": "yoyo10",
+                "followsBack": 1
+            }
+        ]
+    }
+]

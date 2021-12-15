@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+  }
+  ::-webkit-scrollbar {
+    width: 1vmin;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5vmin;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    width: 1vmin;
+    background: #555;
+  }
+  body {
+    background-color: rgb(18, 40, 56);
+    user-select: none;
+    /* display: flex; */
+    height: fit-content;
+  }
+  header {
+    width: 96vw;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    align-self: center;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #000;
+    z-index: 1;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.45);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    animation: headin 0.5s ease;
+  }
+  .heading {
+    display: flex;
+    align-self: center;
+    height: max-content;
+    width: 20vmin;
+    align-items: flex-start;
+  }
+  
+  .background img {
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 422px) and (min-height: 1068px) {
+    body {
+      overflow-x: auto;
+    }
+  }
+  @media screen and (max-width: 600px){
+    header {
+      position: fixed;
+      height: max-content;
+      flex-direction: column;
+      animation: headin-responsive 0.5s ease-out;
+    }
+    
+    .sub {
+      display: flex;
+      justify-content: space-around;
+    }
+    body {
+      overflow-x: hidden;
+    }
+  }
+  
+  #logo {
+    width: 35vmin;
+  }
+  
+  .sub {
+    display: flex;
+    align-items: flex-end;
+  }
+  .sub div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1vw;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+  .sub div:hover {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(26px) saturate(180%);
+    background-color: rgba(19, 41, 58, 0.75);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  .sub div:active {
+    background-color: #14807a;
+  }
+  
+  .heading {
+    justify-content: center;
+  }
+  .sub div {
+    height: 100%;
+    /* width: 100%; */
+  }
+  .sub div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d0d0d0;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* font-size: 10px; */
+    width:max-content;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    cursor: default;
+  }
+  
+  #logo {
+    animation: fil 0.6s ease-in-out forwards 1.8s;
+  }
+  
+  #logo path {
+    stroke-dasharray: 230px;
+    stroke-dashoffset: 230px;
+    animation: a1 1.5s ease-in forwards 0.5s;
+  }
+  
+  @keyframes a1 {
+    0% {
+      stroke-dashoffset: 230px;
+      stroke-opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: -230px;
+      stroke-opacity: 0;
+    }
+  }
+  
+  @keyframes fil {
+    0% {
+      fill: transparent;
+    }
+    50% {
+      fill: #666;
+    }
+    100% {
+      fill: #fff;
+    }
+  }
+  /* @keyframes transit {
+    0% {
+      right: 5vw;
+      opacity: 0;
+    }
+    100% {
+      right: 0vw;
+      opacity: 1;
+    }
+  } */
+  @keyframes headin {
+    0% {
+      height: 190vw;
+      width: 200vw;
+      top: -190vw;
+      right: -50vw;
+      left: -50vw;
+      opacity: 0;
+      /* height: max-content; */
+    }
+    100% {
+      height: 50px;
+      width: 96vw;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes headin-responsive {
+    0% {
+      height: 190vh;
+      width: 200vh;
+      top: -50vw;
+      right: -50vh;
+      left: -50vh;
+      opacity: 0;
+      height: 50px;
+    }
+    100% {
+      height: max-content;
+      width: 96vw;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      opacity: 1;
+      /* height: max-content; */
+    }
+  }

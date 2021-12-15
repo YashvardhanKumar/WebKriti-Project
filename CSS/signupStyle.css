@@ -1,0 +1,309 @@
+body {
+  /* overflow-x: hidden; */
+  background-color: rgb(18, 40, 56);
+  user-select: none;
+  height: fit-content;
+}
+@media screen and (max-width: 422px) and (min-height: 1068px) {
+  body {
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 422px) and (min-height: 1068px) {
+  .log-menu {
+    height: 60vmax;
+    width: 60vmax;
+    flex-direction: column;
+    animation: loginin-responsive 0.5s ease-out;
+  }
+  .login,
+  .create-acc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px){
+  .log-menu {
+    height: 60vmax;
+    width: 60vmax;
+    flex-direction: column;
+  }
+  .login,
+  .create-acc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 422px){
+  #first-name,
+  #last-name,
+  #email-id,
+  #username,
+  #password,
+  #confirm,
+  #birthday {
+    max-width: 90%;
+    max-height: 80%;
+  }
+  .login{
+    align-items: center;
+  }
+  form{
+    justify-content: center;
+  }
+  .bday{
+    flex-direction: column;
+  }
+  .bday div{
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .create-acc{
+    max-width: 85vw;
+    font-size: 2vmin;
+  }
+  .name,
+  .email,
+  .username,
+  .password,
+  .confirm-password,
+  .date {
+    justify-content: center;
+    max-width: 80%;
+    flex-direction: column;
+  }
+  .name {
+    flex-direction: column;
+  }
+}
+@keyframes loginin {
+  0% {
+    height: 10vh;
+    width: 10vw;
+    top: -100vw;
+    right: -100vw;
+    left: -100vw;
+    opacity: 0;
+  }
+  100% {
+    height: 80vh;
+    width: 80vw;
+    top: 0vw;
+    right: 0vw;
+    left: 0vw;
+    opacity: 1;
+  }
+}
+@keyframes loginin-responsive {
+  0% {
+    height: 10vh;
+    width: 10vw;
+    top: -100vw;
+    right: -100vw;
+    left: -100vw;
+    opacity: 0;
+  }
+  100% {
+    height: 60vmax;
+    width: 60vmax;
+    top: 0vw;
+    right: 0vw;
+    left: 0vw;
+    opacity: 1;
+  }
+}
+.log-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.525);
+  position: absolute;
+}
+.log-menu {
+  height: 80vh;
+  width: 100vw;
+  margin-top: 13vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: loginin 0.4s ease-out;
+}
+.login {
+  height: max-content;
+  width: max-content;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vh;
+  backdrop-filter: blur(36px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 17, 17, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.create-acc {
+  height: 10%;
+  display: flex;
+  width: max-content;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5vmin;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(36px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 17, 17, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.create-acc a {
+  text-decoration: none;
+  border-radius: 3px;
+  color: #f0a0f0;
+}
+.create-acc a:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(3, 83, 14) 0%,
+    rgb(85, 3, 3) 40%,
+    rgb(73, 3, 67) 100%
+  );
+  border-radius: 3px;
+}
+.email,
+.username,
+.password,
+.confirm-password,
+.name,
+.submit {
+  display: flex;
+}
+.submit{
+  width: 100%;
+}
+.confirm-password{
+  border-bottom: 1px solid rgba(200, 200, 200, 0.175);
+
+}
+.bday {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.175);
+}
+.bday div {
+  width: 75%;
+  padding: 0.5vmin;
+  margin: 1vmin;
+  text-align: center;
+  font-size: smaller;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.log-head {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.175);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  padding: 4px;
+}
+.log-head div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#first-name,
+#last-name,
+#email-id,
+#username,
+#password,
+#confirm,
+#birthday {
+  display: flex;
+  padding: 0.3em;
+  width: 100%;
+  border: none;
+  margin: 1vmin 1vmin;
+  text-align: center;
+  font-size: large;
+  font-size: 15px;
+  border-radius: 20px;
+  outline: 0;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#submit {
+  padding: 1vmin;
+  margin: 2vmin 2vmin;
+  border-radius: 8vmin;
+  font-size: small;
+  width: 100%;
+  color: #fff;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(30, 13, 190, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  outline: 0;
+  border: none;
+}
+@keyframes colorhover {
+  0% {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(30, 13, 190, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  }
+  100% {
+    background: rgb(31, 158, 180);
+    background: linear-gradient(
+      90deg,
+      rgba(231, 58, 180, 1) 0%,
+      rgba(30, 13, 90, 1) 50%,
+      rgba(52, 176, 69, 1) 100%
+    );
+  }
+}
+#submit:hover {
+  background: rgb(31, 158, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(231, 58, 180, 1) 0%,
+    rgba(30, 13, 90, 1) 50%,
+    rgba(52, 176, 69, 1) 100%
+  );
+  animation: colorhover 0.5s ease-out;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
